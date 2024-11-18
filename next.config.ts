@@ -1,6 +1,5 @@
-const isProd = process.env.NODE_ENV === 'production';
 const nextConfig = {
-  basePath: process.env.NODE_ENV === 'production' ? '/adnixmedia' : ''
+  basePath: process.env.NODE_ENV === 'production' ? '/adnixmedia' : '',
   output: "export",
   reactStrictMode: true,
   images: {
