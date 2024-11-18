@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import { FaBullseye, FaSearch, FaFacebook, FaPen, FaChartBar } from 'react-icons/fa'; // Importing icons from react-icons
 
 export default function Services() {

@@ -11,18 +11,20 @@ export default function Home() {
     dots.forEach((dot, index) => {
       dot.addEventListener('click', () => {
         const section = document.getElementById(`section-${index}`);
-        section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        if (section) {
+          section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
       });
     });
-
+  
     // Intersection Observer to track which section is in view
     const observerOptions = {
       root: null,
       rootMargin: '0px',
       threshold: 0.5,
     };
-
-    const observerCallback = (entries) => {
+  
+    const observerCallback = (entries: IntersectionObserverEntry[]) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           const sectionIndex = parseInt(entry.target.id.split('-')[1], 10);
@@ -30,11 +32,11 @@ export default function Home() {
         }
       });
     };
-
+  
     const observer = new IntersectionObserver(observerCallback, observerOptions);
     const sections = document.querySelectorAll('section');
     sections.forEach((section) => observer.observe(section));
-
+  
     // Cleanup observer when component is unmounted
     return () => {
       if (observer) {
@@ -72,7 +74,7 @@ export default function Home() {
           <div className="grid grid-cols-2 gap-8 items-center">
             <div className="text-left pl-8">
               <h2 className="text-4xl font-bold mb-6">Who We Are</h2>
-              <p className="text-xl">Adnix Media is a digital marketing agency dedicated to helping vacation property owners succeed. We specialize in strategies designed to fill your calendar with bookings, boost your property’s online visibility, and increase your revenue—all while saving you time.</p>
+              <p className="text-xl">Adnix Media is a digital marketing agency dedicated to helping vacation property owners succeed. We specialize in strategies designed to fill your calendar with bookings, boost your property&#39;s online visibility, and increase your revenue—all while saving you time.</p>
             </div>
             <img src="teamwork.png" alt="Teamwork illustration" className="w-full max-w-sm mx-auto" />
           </div>
@@ -101,7 +103,7 @@ export default function Home() {
                   </div>
                   <h3 className="text-2xl font-semibold ml-4">SEO Optimization</h3>
                 </div>
-                <p className="text-lg text-gray-600">Enhance your property's online visibility with effective SEO strategies that bring organic traffic to your listings.</p>
+                <p className="text-lg text-gray-600">Enhance your property&#39;s online visibility with effective SEO strategies that bring organic traffic to your listings.</p>
               </div>
               {/* Card 3 */}
               <div className="bg-white border-2 border-indigo-200 rounded-lg p-8 transition transform hover:-translate-y-2 hover:shadow-2xl">
@@ -131,7 +133,7 @@ export default function Home() {
         <section id="section-3" className="snap-start bg-gradient-to-t from-blue-400 to-indigo-600 text-white h-screen flex items-center justify-center p-16">
           <div className="text-center">
             <h2 className="text-4xl font-bold mb-6">Why Choose Us?</h2>
-            <p className="text-xl max-w-screen-md mx-auto">With a focus on results and a money-back guarantee, we are committed to your success. Our personalized approach ensures strategies tailored to your property’s unique needs.</p>
+            <p className="text-xl max-w-screen-md mx-auto">With a focus on results and a money-back guarantee, we are committed to your success. Our personalized approach ensures strategies tailored to your property&#39;s unique needs.</p>
             <br/>
             <Link href="/contact">
               <p className="mt-10 inline-block bg-white text-black px-8 py-4 rounded-lg shadow-lg transform hover:scale-105 transition-transform">Take Action Today!</p>

@@ -55,7 +55,7 @@ export default function About() {
           </div>
           <div className="bg-white p-8 rounded-xl border-t-4 border-yellow-500 shadow-md w-full">
             <h3 className="text-3xl font-semibold mb-4 text-center">Money-Back Guarantee</h3>
-            <p className="text-lg text-center text-gray-700">Our money-back guarantee ensures your satisfaction. If we don't hit our targets, you get your money back.</p>
+            <p className="text-lg text-center text-gray-700">Our money-back guarantee ensures your satisfaction. If we don&apos;t hit our targets, you get your money back.</p>
           </div>
         </div>
 
@@ -66,7 +66,7 @@ export default function About() {
           </div>
           <div className="bg-white p-8 rounded-xl border-t-4 border-purple-500 shadow-md w-full">
             <h3 className="text-3xl font-semibold mb-4 text-center">Transparent Communication</h3>
-            <p className="text-lg text-center text-gray-700">We believe in clear communication. You’ll always be informed about what’s happening and how we are achieving your goals.</p>
+            <p className="text-lg text-center text-gray-700">We believe in clear communication. You&#39;ll always be informed about what&#39;s happening and how we are achieving your goals.</p>
           </div>
         </div>
 
@@ -86,7 +86,7 @@ export default function About() {
       <section className="h-screen flex items-center justify-center p-16">
         <div className="text-center">
           <h2 className="text-4xl font-bold mb-4">Want to learn more about what we can do for you?</h2>
-          <p className="text-xl mb-8">Contact us today and let's discuss how we can help you succeed!</p>
+          <p className="text-xl mb-8">Contact us today and let&apos;s discuss how we can help you succeed!</p>
           <Link href="/contact">
             <p className="inline-block bg-gradient-to-r from-blue-600 to-blue-400 text-white px-8 py-4 rounded-lg shadow-lg transform hover:scale-105 transition-transform">Contact Us</p>
           </Link>
