@@ -65,7 +65,7 @@ export default function About() {
               <FaDollarSign size={80} className="text-indigo-500" />
               <h3 className="text-4xl font-bold">Money-Back Guarantee</h3>
               <p className="text-lg text-gray-700 leading-relaxed">
-                Our money-back guarantee ensures satisfaction. If we don’t hit our targets, you get your money back.
+                Our money-back guarantee ensures satisfaction. If we don&apos;t hit our targets, you get your money back.
               </p>
             </div>
             {/* Communication */}
@@ -73,7 +73,7 @@ export default function About() {
               <FaComments size={80} className="text-indigo-500" />
               <h3 className="text-4xl font-bold">Transparent Communication</h3>
               <p className="text-lg text-gray-700 leading-relaxed">
-                Clear communication ensures you're always informed about what’s happening and how we’re achieving your goals.
+                Clear communication ensures you&apos;re always informed about what&apos;s happening and how we&apos;re achieving your goals.
               </p>
             </div>
             {/* Scalable Solutions */}

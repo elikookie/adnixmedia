@@ -11,7 +11,7 @@ export default function Contact() {
       <main className="flex-grow px-4 md:px-12 mt-20 relative">
         <header className="text-center mb-16 mt-12">
           <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight leading-tight">
-            Let’s Create Something Amazing Together
+            Let&apos;s Create Something Amazing Together
           </h1>
           <p className="text-xl md:text-2xl mt-6 font-light">
             Reach out to us for inquiries or schedule your consultation below.
@@ -43,14 +43,14 @@ export default function Contact() {
               <strong>Duration:</strong> 45 minutes
             </p>
             <p className="text-lg text-gray-700 mb-4">
-              <strong>What you'll get:</strong>
+              <strong>What you&apos;ll get:</strong>
             </p>
             <ul className="text-lg text-gray-700 list-disc list-inside mb-4">
               <li>Roadmap on how to scale your business</li>
               <li>Deep dive into your business marketing operations</li>
             </ul>
             <p className="text-lg text-gray-700">
-              This call is perfect if you're representing an ambitious business looking to improve and scale.
+              This call is perfect if you&apos;re representing an ambitious business looking to improve and scale.
             </p>
           </div>
 
