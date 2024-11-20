@@ -1,91 +1,109 @@
-import Link from 'next/link';
-import { FaChartLine, FaHandshake, FaDollarSign, FaComments, FaCogs } from 'react-icons/fa';
-import NavBar from '../components/navbar';
-import Footer from '../components/footer';
+import Link from "next/link";
+import { FaChartLine, FaHandshake, FaDollarSign, FaComments, FaCogs } from "react-icons/fa";
+import NavBar from "../components/navbar";
+import Footer from "../components/footer";
 
 export default function About() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white text-blue-900 pt-16">
+    <div className="min-h-screen bg-gradient-to-b from-white to-blue-50 text-blue-900">
       <NavBar />
 
       {/* About Header Section */}
-      <section className="min-h-screen flex flex-col items-center justify-center text-center px-8 py-16">
-        <h1 className="text-4xl sm:text-5xl font-bold mb-8">About Adnix Media</h1>
-        <p className="text-lg sm:text-2xl max-w-3xl mx-auto mb-8">We help vacation property owners maximize bookings and grow their businesses with our creative and data-driven strategies.</p>
+      <section className="relative min-h-screen flex flex-col items-center justify-center text-center px-8 py-16 bg-gradient-to-r from-blue-50 to-indigo-50">
+        <div className="relative z-10">
+          <h1 className="text-6xl sm:text-8xl font-extrabold tracking-tight mb-6">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">About us</span>
+          </h1>
+          <p className="text-lg sm:text-2xl max-w-3xl mx-auto leading-relaxed">
+            We are a group of talanted individuals that want to help your business reach new heights.
+          </p>
+        </div>
+        <div className="absolute inset-0 opacity-10 bg-[radial-gradient(circle, rgba(59,130,246,0.3), transparent)]"></div>
       </section>
 
       {/* Our Mission Section */}
-      <section className="min-h-screen bg-gradient-to-r from-blue-600 to-blue-400 text-white flex items-center p-8 sm:p-16">
-        <div className="max-w-screen-lg mx-auto text-center">
-          <div className="flex items-center justify-center mb-6">
-            <FaChartLine size={40} className="text-white mr-4" />
-            <h2 className="text-3xl sm:text-4xl font-bold">Our Mission</h2>
+      <section className="relative py-32 bg-gradient-to-r from-blue-600 to-blue-500 text-white">
+        <div className="max-w-screen-lg mx-auto text-left flex flex-col md:flex-row items-center relative z-10 px-6 md:px-12 gap-12">
+          <div className="flex-shrink-0 md:w-1/3">
+            <FaChartLine size={150} className="text-white/30 opacity-90" />
           </div>
-          <p className="text-base sm:text-xl max-w-2xl mx-auto">To empower vacation property owners by delivering innovative marketing solutions that drive results. We take pride in offering personalized services, clear communication, and measurable outcomes.</p>
+          <div className="md:w-2/3">
+            <h2 className="text-5xl font-extrabold leading-tight mb-6">Our Mission</h2>
+            <p className="text-lg sm:text-xl leading-relaxed">
+              To empower vacation property owners by delivering innovative marketing solutions that drive results. We take pride in offering personalized services, clear communication, and measurable outcomes.
+            </p>
+          </div>
         </div>
+        <div className="absolute inset-0 bg-gradient-to-t from-blue-700 to-blue-500 opacity-30"></div>
       </section>
 
       {/* Why Choose Adnix Media Section */}
-      <section className="min-h-screen flex flex-col items-center justify-center px-8 py-16 bg-blue-50">
-        <h2 className="text-4xl sm:text-5xl font-bold mb-12 text-center">Why Choose Adnix Media?</h2>
-
-        <div className="flex flex-wrap justify-center items-start gap-8 sm:gap-16 w-full">
-          {/* Card Section */}
-          {[{
-            icon: <FaChartLine size={32} />,
-            bgColor: 'bg-blue-500',
-            borderColor: 'border-blue-500',
-            title: 'Specialized Expertise',
-            description: 'Our team focuses exclusively on vacation rental marketing, bringing specialized knowledge and effective strategies to help your property stand out.'
-          }, {
-            icon: <FaHandshake size={32} />,
-            bgColor: 'bg-green-500',
-            borderColor: 'border-green-500',
-            title: 'Results-Driven',
-            description: 'We deliver tangible results that maximize bookings and revenue through data-driven strategies tailored to your business goals.'
-          }, {
-            icon: <FaDollarSign size={32} />,
-            bgColor: 'bg-yellow-500',
-            borderColor: 'border-yellow-500',
-            title: 'Money-Back Guarantee',
-            description: 'Our money-back guarantee ensures your satisfaction. If we don\'t hit our targets, you get your money back.'
-          }, {
-            icon: <FaComments size={32} />,
-            bgColor: 'bg-purple-500',
-            borderColor: 'border-purple-500',
-            title: 'Transparent Communication',
-            description: 'We believe in clear communication. You\'ll always be informed about what\'s happening and how we are achieving your goals.'
-          }, {
-            icon: <FaCogs size={32} />,
-            bgColor: 'bg-red-500',
-            borderColor: 'border-red-500',
-            title: 'Scalable Solutions',
-            description: 'Our solutions are flexible and scalable, designed to grow with your business and fit your budget and needs.'
-          }].map((card, index) => (
-            <div key={index} className="flex flex-col items-center relative max-w-sm w-full">
-              <div className={`flex items-center justify-center w-16 h-16 rounded-full ${card.bgColor} text-white mb-6 shadow-lg`}>
-                {card.icon}
-              </div>
-              <div className={`bg-white p-6 sm:p-8 rounded-xl border-t-4 ${card.borderColor} shadow-md w-full`}>
-                <h3 className="text-2xl sm:text-3xl font-semibold mb-4 text-center">{card.title}</h3>
-                <p className="text-base sm:text-lg text-center text-gray-700">{card.description}</p>
-              </div>
+      <section className="relative py-32 bg-indigo-50 text-blue-900">
+        <div className="max-w-screen-xl mx-auto px-6 md:px-12">
+          <h2 className="text-5xl sm:text-6xl font-bold mb-12 text-center">
+            Why Choose <span className="text-indigo-600">Adnix Media?</span>
+          </h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-16">
+            {/* Expertise */}
+            <div className="relative flex flex-col gap-6 items-start">
+              <FaChartLine size={80} className="text-indigo-500" />
+              <h3 className="text-4xl font-bold">Specialized Expertise</h3>
+              <p className="text-lg text-gray-700 leading-relaxed">
+                We focus exclusively on vacation rental marketing, bringing specialized knowledge and effective strategies to help your property stand out.
+              </p>
             </div>
-          ))}
+            {/* Results */}
+            <div className="relative flex flex-col gap-6 items-start">
+              <FaHandshake size={80} className="text-indigo-500" />
+              <h3 className="text-4xl font-bold">Results-Driven</h3>
+              <p className="text-lg text-gray-700 leading-relaxed">
+                Delivering tangible results to maximize bookings and revenue through data-driven strategies tailored to your goals.
+              </p>
+            </div>
+            {/* Guarantee */}
+            <div className="relative flex flex-col gap-6 items-start">
+              <FaDollarSign size={80} className="text-indigo-500" />
+              <h3 className="text-4xl font-bold">Money-Back Guarantee</h3>
+              <p className="text-lg text-gray-700 leading-relaxed">
+                Our money-back guarantee ensures satisfaction. If we don’t hit our targets, you get your money back.
+              </p>
+            </div>
+            {/* Communication */}
+            <div className="relative flex flex-col gap-6 items-start">
+              <FaComments size={80} className="text-indigo-500" />
+              <h3 className="text-4xl font-bold">Transparent Communication</h3>
+              <p className="text-lg text-gray-700 leading-relaxed">
+                Clear communication ensures you're always informed about what’s happening and how we’re achieving your goals.
+              </p>
+            </div>
+            {/* Scalable Solutions */}
+            <div className="relative flex flex-col gap-6 items-start">
+              <FaCogs size={80} className="text-indigo-500" />
+              <h3 className="text-4xl font-bold">Scalable Solutions</h3>
+              <p className="text-lg text-gray-700 leading-relaxed">
+                Flexible, scalable solutions designed to grow with your business and fit your budget and needs.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 
       {/* Call to Action Section */}
-      <section className="h-screen flex items-center justify-center p-8 sm:p-16">
+      <section className="relative h-screen flex items-center justify-center bg-gradient-to-r from-blue-600 to-indigo-600 text-white">
         <div className="text-center">
-          <h2 className="text-3xl sm:text-4xl font-bold mb-4">Want to learn more about what we can do for you?</h2>
-          <p className="text-lg sm:text-xl mb-8">Contact us today and let&apos;s discuss how we can help you succeed!</p>
+          <h2 className="text-4xl sm:text-5xl font-bold mb-6">Ready to Partner with Adnix Media?</h2>
+          <p className="text-lg sm:text-xl mb-8 max-w-2xl mx-auto">
+            Let us help you unlock the full potential of your vacation rental properties. Get in touch with us today!
+          </p>
           <Link href="/contact">
-            <p className="inline-block bg-gradient-to-r from-blue-600 to-blue-400 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg shadow-lg transform hover:scale-105 transition-transform">Contact Us</p>
+            <p className="inline-block bg-gradient-to-r from-blue-500 to-indigo-500 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg shadow-lg transform hover:scale-105 transition-transform">
+              Contact Us
+            </p>
           </Link>
         </div>
       </section>
-      <Footer/>
+
+      <Footer />
     </div>
   );
 }
