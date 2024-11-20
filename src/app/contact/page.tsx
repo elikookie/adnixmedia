@@ -2,6 +2,7 @@
 
 import { InlineWidget } from "react-calendly";
 import NavBar from '../components/navbar';
+import Footer from '../components/footer';
 
 export default function Contact() {
   return (
@@ -19,7 +20,8 @@ export default function Contact() {
         <div className="w-full max-w-md md:max-w-2xl lg:max-w-4xl">
           <InlineWidget url="https://calendly.com/adnixmedia-info/90-day-booking-boost-consultation-1?back=1" />
         </div>
-      </div>
+        </div>
+        <Footer/>
     </div>
   );
 }

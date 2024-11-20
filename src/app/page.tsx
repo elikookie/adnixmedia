@@ -2,6 +2,7 @@
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import NavBar from './components/navbar';
+import Footer from './components/footer';
 
 export default function Home() {
   const [activeSection, setActiveSection] = useState(0);
@@ -64,7 +65,7 @@ export default function Home() {
       {/* Scrollable Container */}
       <div className="snap-y snap-mandatory overflow-y-auto h-full w-full">
         {/* Section 1 */}
-        <section id="section-0" className="snap-start bg-gradient-to-r from-blue-400 to-blue-600 text-white h-screen flex items-center justify-center p-8 md:p-16">
+        <section id="section-0" className="bg-gradient-to-r from-blue-400 to-blue-600 text-white h-screen flex items-center justify-center p-8 md:p-16">
           <div className="text-center">
             <h1 className="text-3xl md:text-5xl font-extrabold mb-4">Welcome to Adnix Media</h1>
             <p className="text-lg md:text-2xl">Driving Bookings, Maximizing Revenue, and Growing Your Vacation Rental Business.</p>
@@ -72,7 +73,7 @@ export default function Home() {
         </section>
 
         {/* Section 2 */}
-        <section id="section-1" className="snap-start bg-white text-blue-900 h-screen flex items-center justify-center p-8 md:p-16">
+        <section id="section-1" className="bg-white text-blue-900 h-screen flex items-center justify-center p-8 md:p-16">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
             <div className="text-center md:text-left md:pl-8">
               <h2 className="text-3xl md:text-4xl font-bold mb-6">Who We Are</h2>
@@ -83,7 +84,7 @@ export default function Home() {
         </section>
 
         {/* Section 3 - Updated with Cards */}
-        <section id="section-2" className="snap-start bg-blue-50 text-blue-900 h-screen flex items-center justify-center p-8 md:p-16">
+        <section id="section-2" className="bg-blue-50 text-blue-900 h-screen flex items-center justify-center p-8 md:p-16">
           <div className="max-w-screen-lg mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">What We Offer</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
@@ -132,7 +133,7 @@ export default function Home() {
         </section>
 
         {/* Section 4 */}
-        <section id="section-3" className="snap-start bg-gradient-to-t from-blue-400 to-indigo-600 text-white h-screen flex items-center justify-center p-8 md:p-16">
+        <section id="section-3" className="bg-gradient-to-t from-blue-400 to-indigo-600 text-white h-screen flex items-center justify-center p-8 md:p-16">
           <div className="text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">Why Choose Us?</h2>
             <p className="text-base md:text-xl max-w-screen-md mx-auto">With a focus on results and a money-back guarantee, we are committed to your success. Our personalized approach ensures strategies tailored to your property&#39;s unique needs.</p>
@@ -142,7 +143,9 @@ export default function Home() {
             </Link>
           </div>
         </section>
+        <Footer/>
       </div>
+
     </div>
   );
 }

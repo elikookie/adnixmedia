@@ -1,9 +1,10 @@
 import { FaBullseye, FaSearch, FaFacebook, FaPen, FaChartBar } from 'react-icons/fa'; // Importing icons from react-icons
 import NavBar from '../components/navbar';
+import Footer from '../components/footer';
 
 export default function Services() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white text-blue-900 py-16">
+    <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white text-blue-900 pt-16">
       <NavBar />
       {/* Header */}
       <header className="text-center mb-16 mt-20 px-4 md:px-8">
@@ -69,6 +70,7 @@ export default function Services() {
         </div>
       </section>
       <br />
+      <Footer/>
     </div>
   );
 }

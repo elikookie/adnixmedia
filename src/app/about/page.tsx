@@ -1,10 +1,11 @@
 import Link from 'next/link';
 import { FaChartLine, FaHandshake, FaDollarSign, FaComments, FaCogs } from 'react-icons/fa';
 import NavBar from '../components/navbar';
+import Footer from '../components/footer';
 
 export default function About() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white text-blue-900 py-16">
+    <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white text-blue-900 pt-16">
       <NavBar />
 
       {/* About Header Section */}
@@ -84,6 +85,7 @@ export default function About() {
           </Link>
         </div>
       </section>
+      <Footer/>
     </div>
   );
 }
