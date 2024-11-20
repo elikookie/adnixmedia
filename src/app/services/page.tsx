@@ -1,76 +1,130 @@
-import { FaBullseye, FaSearch, FaFacebook, FaPen, FaChartBar } from 'react-icons/fa'; // Importing icons from react-icons
-import NavBar from '../components/navbar';
-import Footer from '../components/footer';
+import { FaBullseye, FaSearch, FaFacebook, FaPen, FaChartBar } from "react-icons/fa";
+import NavBar from "../components/navbar";
+import Footer from "../components/footer";
 
 export default function Services() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white text-blue-900 pt-16">
+    <div className="min-h-screen pt-32 bg-gradient-to-b from-white to-blue-50 text-blue-900 overflow-hidden relative">
       <NavBar />
-      {/* Header */}
-      <header className="text-center mb-16 mt-20 px-4 md:px-8">
-        <h1 className="text-3xl md:text-5xl font-bold mb-6">Our Services</h1>
-        <p className="text-lg md:text-2xl max-w-3xl mx-auto">At Adnix Media, we offer a suite of tailored digital marketing solutions designed to help vacation rental property owners boost their bookings and grow their businesses.</p>
+
+      {/* Header Section */}
+      <header className="text-center py-20 px-6 md:px-12 relative">
+        <h1 className="text-5xl md:text-7xl font-extrabold leading-tight tracking-wide mb-6">
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 to-blue-500">
+            Transforming Your Rentals
+          </span>
+          <br />
+          <span className="text-black">With Cutting-Edge Solutions</span>
+        </h1>
+        <p className="text-lg md:text-2xl max-w-4xl mx-auto leading-relaxed mt-4">
+          At Adnix Media, we provide premium digital marketing strategies to
+          elevate your vacation rental business. Let’s drive bookings, grow your
+          audience, and bring your properties to life.
+        </p>
       </header>
 
-      {/* Services Section */}
-      <section className="max-w-screen-xl mx-auto px-4 sm:px-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 p-5">
-        {/* Service 1 - Targeted Online Advertising */}
-        <div className="bg-white border-2 border-blue-300 rounded-lg p-6 md:p-8 transition transform hover:-translate-y-2">
-          <div className="flex items-center mb-4">
-            <div className="w-10 h-10 md:w-12 md:h-12 flex items-center justify-center rounded-full bg-blue-500 text-white">
-              <FaBullseye size={20} />
-            </div>
-            <h3 className="text-xl md:text-2xl font-semibold ml-4">Targeted Online Advertising</h3>
+      {/* Section: Targeted Online Advertising */}
+      <section className="relative py-20 px-6 md:px-12 bg-gradient-to-r from-blue-50 via-indigo-100 to-white">
+        <div className="max-w-screen-lg mx-auto flex flex-col md:flex-row items-center">
+          <div className="md:w-1/2 text-center md:text-left">
+            <h2 className="text-4xl md:text-6xl font-bold leading-tight mb-4 text-indigo-600">
+              Precision in Advertising
+            </h2>
+            <p className="text-lg md:text-xl leading-relaxed mb-8 text-gray-700">
+              We deliver data-driven, targeted online campaigns tailored to reach
+              vacationers actively searching for properties like yours. From
+              Google Ads to social media, we ensure every click counts.
+            </p>
           </div>
-          <p className="text-base md:text-lg text-gray-700">We create data-driven ad campaigns on platforms like Google and social media to reach travelers actively searching for vacation rentals.</p>
-        </div>
-
-        {/* Service 2 - SEO */}
-        <div className="bg-white border-2 border-blue-300 rounded-lg p-6 md:p-8 transition transform hover:-translate-y-2">
-          <div className="flex items-center mb-4">
-            <div className="w-10 h-10 md:w-12 md:h-12 flex items-center justify-center rounded-full bg-green-500 text-white">
-              <FaSearch size={20} />
-            </div>
-            <h3 className="text-xl md:text-2xl font-semibold ml-4">Search Engine Optimization (SEO)</h3>
+          <div className="md:w-1/2 flex justify-center relative">
+            <FaBullseye size={100} className="text-indigo-400 animate-pulse" />
           </div>
-          <p className="text-base md:text-lg text-gray-700">Enhance your property’s visibility with proven SEO strategies that help your website rank higher in search results, driving more organic traffic.</p>
-        </div>
-
-        {/* Service 3 - Social Media Management */}
-        <div className="bg-white border-2 border-blue-300 rounded-lg p-6 md:p-8 transition transform hover:-translate-y-2">
-          <div className="flex items-center mb-4">
-            <div className="w-10 h-10 md:w-12 md:h-12 flex items-center justify-center rounded-full bg-yellow-500 text-white">
-              <FaFacebook size={20} />
-            </div>
-            <h3 className="text-xl md:text-2xl font-semibold ml-4">Social Media Management</h3>
-          </div>
-          <p className="text-base md:text-lg text-gray-700">From engaging posts to ad campaigns, we’ll manage your social media presence to attract and convert followers into bookings.</p>
-        </div>
-
-        {/* Service 4 - Content Creation */}
-        <div className="bg-white border-2 border-blue-300 rounded-lg p-6 md:p-8 transition transform hover:-translate-y-2">
-          <div className="flex items-center mb-4">
-            <div className="w-10 h-10 md:w-12 md:h-12 flex items-center justify-center rounded-full bg-purple-500 text-white">
-              <FaPen size={20} />
-            </div>
-            <h3 className="text-xl md:text-2xl font-semibold ml-4">Content Creation</h3>
-          </div>
-          <p className="text-base md:text-lg text-gray-700">Compelling property descriptions, engaging blogs, and optimized listings tailored to showcase your rentals and attract guests.</p>
-        </div>
-
-        {/* Service 5 - Analytics and Reporting */}
-        <div className="bg-white border-2 border-blue-300 rounded-lg p-6 md:p-8 transition transform hover:-translate-y-2 md:col-span-2">
-          <div className="flex items-center mb-4">
-            <div className="w-10 h-10 md:w-12 md:h-12 flex items-center justify-center rounded-full bg-red-500 text-white">
-              <FaChartBar size={20} />
-            </div>
-            <h3 className="text-xl md:text-2xl font-semibold ml-4">Analytics and Reporting</h3>
-          </div>
-          <p className="text-base md:text-lg text-gray-700">We provide clear, actionable insights into your campaign performance, ensuring every decision is backed by data.</p>
         </div>
       </section>
-      <br />
-      <Footer/>
+
+      {/* Section: SEO */}
+      <section className="relative py-20 px-6 md:px-12 bg-indigo-50">
+        <div className="absolute inset-0 bg-opacity-10 bg-[radial-gradient(circle at center, rgba(59,130,246,0.15), transparent)]"></div>
+        <div className="max-w-screen-lg mx-auto flex flex-col-reverse md:flex-row items-center relative z-10">
+          <div className="md:w-1/2 flex justify-center relative">
+            <FaSearch size={100} className="text-blue-400 animate-pulse" />
+          </div>
+          <div className="md:w-1/2 text-center md:text-right">
+            <h2 className="text-4xl md:text-6xl font-bold leading-tight mb-4 text-blue-600">
+              Dominate Search Rankings
+            </h2>
+            <p className="text-lg md:text-xl leading-relaxed mb-8 text-gray-700">
+              Increase your visibility on search engines with our advanced SEO
+              techniques. We help your website rank higher, driving organic
+              traffic and more bookings.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Section: Social Media Management */}
+      <section className="relative py-20 px-6 md:px-12 bg-gradient-to-l from-indigo-50 via-white to-blue-50">
+        <div className="absolute inset-0">
+          <div className="absolute w-48 h-48 rounded-full bg-indigo-300 opacity-30 blur-3xl top-1/4 left-1/3"></div>
+          <div className="absolute w-56 h-56 rounded-full bg-blue-200 opacity-20 blur-3xl bottom-10 left-1/4"></div>
+        </div>
+        <div className="max-w-screen-lg mx-auto flex flex-col md:flex-row items-center relative z-10">
+          <div className="md:w-1/2 text-center md:text-left">
+            <h2 className="text-4xl md:text-6xl font-bold leading-tight mb-4 text-indigo-600">
+              Build a Social Presence
+            </h2>
+            <p className="text-lg md:text-xl leading-relaxed mb-8 text-gray-700">
+              From Instagram to Facebook, we craft engaging social media
+              strategies to captivate your audience and convert followers into
+              bookings.
+            </p>
+          </div>
+          <div className="md:w-1/2 flex justify-center relative">
+            <FaFacebook size={100} className="text-indigo-400 animate-pulse" />
+          </div>
+        </div>
+      </section>
+
+      {/* Section: Content Creation */}
+      <section className="relative py-20 px-6 md:px-12 bg-blue-50">
+        <div className="absolute inset-0 bg-gradient-to-t from-indigo-100 via-blue-50 to-white opacity-50"></div>
+        <div className="max-w-screen-lg mx-auto flex flex-col-reverse md:flex-row items-center relative z-10">
+          <div className="md:w-1/2 flex justify-center relative">
+            <FaPen size={100} className="text-blue-400 animate-pulse" />
+          </div>
+          <div className="md:w-1/2 text-center md:text-right">
+            <h2 className="text-4xl md:text-6xl font-bold leading-tight mb-4 text-blue-600">
+              Engaging Content
+            </h2>
+            <p className="text-lg md:text-xl leading-relaxed mb-8 text-gray-700">
+              Highlight your rentals with professional descriptions, blogs, and
+              optimized listings that connect with potential guests.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Section: Analytics and Reporting */}
+      <section className="relative py-20 px-6 md:px-12 bg-gradient-to-r from-indigo-200 to-indigo-400">
+        <div className="absolute inset-0 opacity-10 bg-[radial-gradient(circle at bottom left, rgba(255,255,255,0.2), transparent)]"></div>
+        <div className="max-w-screen-lg mx-auto flex flex-col md:flex-row items-center relative z-10">
+          <div className="md:w-1/2 text-center md:text-left">
+            <h2 className="text-4xl md:text-6xl font-bold leading-tight mb-4 text-white">
+              Insights That Matter
+            </h2>
+            <p className="text-lg md:text-xl leading-relaxed mb-8 text-indigo-100">
+              Access detailed analytics and actionable reporting to ensure your
+              marketing efforts are driving results. Data-backed decisions lead
+              to smarter investments.
+            </p>
+          </div>
+          <div className="md:w-1/2 flex justify-center relative">
+            <FaChartBar size={100} className="text-indigo-100 animate-pulse" />
+          </div>
+        </div>
+      </section>
+
+      <Footer />
     </div>
   );
 }
