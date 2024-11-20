@@ -50,62 +50,55 @@ export default function Home() {
         ))}
       </div>
 
-      {/* Scrollable Content */}
+      {/* Content Sections */}
       <div className="snap-y snap-mandatory overflow-y-auto h-full w-full">
-        {/* Section 1 */}
+        {/* Hero Section */}
         <section
           id="section-0"
           className="relative h-screen flex items-center justify-center p-8"
           style={{
             backgroundImage: "url('/backdrop.jpg')",
-            backgroundSize: 'cover',
-            backgroundAttachment: 'fixed',
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            backgroundAttachment: "fixed",
           }}
         >
-          <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
-          <div className="text-center z-10 text-white animate-fade-in">
-            <h1 className="text-5xl font-extrabold mb-4 leading-tight tracking-wide">
-              Welcome to <span className="bg-clip-text text-transparent bg-gradient-to-r from-sky-300 to-indigo-500">Adnix Media</span>
+          <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+          <div className="z-10 text-center text-white">
+            <h1 className="text-6xl font-extrabold tracking-wider leading-tight mb-6 bg-clip-text text-transparent bg-gradient-to-r from-teal-300 to-indigo-500 animate-slide-in">
+              Adnix Media
             </h1>
-            <p className="text-lg md:text-xl font-light max-w-xl mx-auto">
-              Driving Bookings, Maximizing Revenue, and Growing Your Vacation Rental Business.
+            <p className="text-lg md:text-xl font-light max-w-xl mx-auto mb-8">
+              Driving Bookings, Maximizing Revenue, and Growing Your Vacation
+              Rental Business.
             </p>
             <Link href="#section-1">
-              <button className="mt-8 px-6 py-3 bg-gradient-to-r from-indigo-300 to-blue-500 rounded-full shadow-lg hover:shadow-2xl transform hover:scale-105 transition">
+              <button className="px-8 py-4 bg-gradient-to-r from-teal-400 to-indigo-600 rounded-full shadow-xl hover:scale-110 transition">
                 Learn More
               </button>
             </Link>
           </div>
         </section>
 
-        {/* Section 2 */}
-        <section id="section-1" className="relative min-h-screen flex items-center px-8 md:px-16 bg-gradient-to-r from-white to-gray-100">
-          <div className="max-w-screen-xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <h2 className="text-4xl font-bold leading-tight text-gray-900">
-                <span className="underline decoration-blue-500 decoration-2">Who We Are</span>
-              </h2>
-              <p className="text-lg mt-4 text-gray-700">
-                Adnix Media specializes in strategies designed to fill your calendar with bookings, boost your
-                property&apos;s visibility, and increase revenue—all while saving you time.
-              </p>
-              <Link href="#section-2">
-                <button className="mt-6 px-6 py-3 bg-blue-600 text-white rounded-full hover:bg-blue-700 transform transition hover:scale-105">
-                  Explore Services
-                </button>
-              </Link>
-            </div>
-            <div>
-              <div className="relative w-full h-80 bg-blue-200 rounded-full overflow-hidden shadow-lg">
-                <img
-                  src="/up.jpg"
-                  alt="Adnix Media Team"
-                  className="absolute inset-0 w-full h-full object-cover transform transition hover:scale-110"
-                />
-              </div>
-            </div>
+        {/* About Section */}
+        <section
+          id="section-1"
+          className="relative min-h-screen flex items-center px-8 bg-gradient-to-r from-gray-100 to-gray-50"
+        >
+          <div className="w-full max-w-screen-xl mx-auto">
+            <h2 className="text-5xl font-bold text-gray-900 text-center mb-6">
+              <span className="underline decoration-indigo-500 decoration-4">
+                Who We Are
+              </span>
+            </h2>
+            <p className="text-lg text-gray-700 text-center max-w-3xl mx-auto mb-12">
+              Adnix Media specializes in strategies designed to fill your
+              calendar with bookings, boost your property&apos;s visibility, and
+              increase revenue—all while saving you time.
+            </p>
           </div>
         </section>
+
         {/* Section 3 - Updated with Cards */}
         <section id="section-2" className="relative bg-gradient-to-br from-sky-100 to-white-50 min-h-screen flex flex-col justify-center items-center px-4 sm:px-8 md:px-16">
 
@@ -179,7 +172,7 @@ export default function Home() {
           <div className="text-center">
             <h2 className="text-5xl font-bold">Why Choose Us?</h2>
             <p className="mt-6 max-w-md mx-auto text-lg">
-              We provide personalized strategies with a money-back guarantee, ensuring your property’s unique needs are met.
+              We provide personalized strategies with a money-back guarantee, ensuring your property&apos;s unique needs are met.
             </p>
             <Link href="/contact">
               <button className="mt-8 px-6 py-3 bg-white text-black rounded-full shadow-md transform hover:scale-110 transition">
@@ -188,8 +181,8 @@ export default function Home() {
             </Link>
           </div>
         </section>
+        <Footer />
       </div>
-      <Footer />
     </div>
   );
 }
