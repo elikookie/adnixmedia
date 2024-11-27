@@ -60,7 +60,7 @@ export default function Contact() {
           {/* Calendly Widget */}
           <div className="flex-1">
             <InlineWidget
-              url="https://calendly.com/adnixmedia-info/90-day-booking-boost-consultation-1?hide_event_type_details=1"
+              url="https://calendly.com/adnixmedia-info/90-day-booking-boost-consultation?hide_event_type_details=1"
               styles={{
                 height: "600px",
                 width: "100%",
