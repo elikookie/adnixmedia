@@ -15,7 +15,10 @@ const geistMono = localFont({
 
 export const metadata: Metadata = {
   title: "Adnix Media",
-  description: "Adnix Media is a digital marketing agency targeting business wanting to grow their customer base",
+  description: "Adnix Media is a digital marketing agency targeting businesses wanting to grow their customer base.",
+  icons: {
+    icon: "/favicon.png",
+  },
 };
 
 export default function RootLayout({

@@ -15,8 +15,7 @@ export default function About() {
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">About us</span>
           </h1>
           <p className="text-lg sm:text-2xl max-w-3xl mx-auto leading-relaxed">
-            We are a group of talanted individuals that want to help your business reach new heights.
-          </p>
+          Adnix Media is a results-driven digital marketing agency specializing in empowering vacation property owners to thrive in a competitive market. We craft creative, personalized, and data-backed strategies designed to maximize bookings, enhance online visibility, and foster sustained business growth.          </p>
         </div>
         <div className="absolute inset-0 opacity-10 bg-[radial-gradient(circle, rgba(59,130,246,0.3), transparent)]"></div>
       </section>
@@ -30,8 +29,7 @@ export default function About() {
           <div className="md:w-2/3">
             <h2 className="text-5xl font-extrabold leading-tight mb-6">Our Mission</h2>
             <p className="text-lg sm:text-xl leading-relaxed">
-              To empower vacation property owners by delivering innovative marketing solutions that drive results. We take pride in offering personalized services, clear communication, and measurable outcomes.
-            </p>
+Our mission is to take the stress out of marketing so you can focus on providing exceptional experiences for your guests. Whether you&apos;re looking to boost seasonal occupancy, reach new audiences, or build a loyal customer base, we are your dedicated partner in achieving measurable success.            </p>
           </div>
         </div>
         <div className="absolute inset-0 bg-gradient-to-t from-blue-700 to-blue-500 opacity-30"></div>
