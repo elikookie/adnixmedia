@@ -1,4 +1,4 @@
-import { FaBullseye, FaSearch, FaInstagram , FaPen, FaChartBar } from "react-icons/fa";
+import { FaBullseye, FaSearch, FaInstagram , FaChartBar } from "react-icons/fa";
 import NavBar from "../components/navbar";
 import Footer from "../components/footer";
 
@@ -85,24 +85,6 @@ export default function Services() {
         </div>
       </section>
 
-      {/* Section: Content Creation */}
-      <section className="relative py-20 px-6 md:px-12 bg-indigo-50">
-        <div className="absolute inset-0 bg-gradient-to-t from-sky-100 via-indigo-50 to-white opacity-50"></div>
-        <div className="max-w-screen-lg mx-auto flex flex-col-reverse md:flex-row items-center relative z-10">
-          <div className="md:w-1/2 flex justify-center relative">
-            <FaPen size={100} className="text-indigo-400 animate-pulse" />
-          </div>
-          <div className="md:w-1/2 text-center md:text-right">
-            <h2 className="text-4xl md:text-6xl font-bold leading-tight mb-4 text-indigo-600">
-              Engaging Content
-            </h2>
-            <p className="text-lg md:text-xl leading-relaxed mb-8 text-gray-700">
-              Highlight your rentals with professional descriptions, blogs, and
-              optimized listings that connect with potential guests.
-            </p>
-          </div>
-        </div>
-      </section>
 
       {/* Section: Analytics and Reporting */}
       <section className="relative py-20 px-6 md:px-12 bg-gradient-to-r from-blue-200 to-sky-400">
